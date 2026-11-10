@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>DevMaster</title>
+  </head>
+  <body>
+    <div class="saas-page">
+      <header class="saas-nav">
+        <div class="saas-container nav-row">
+          <a href="#" class="saas-logo">🖥️ DevMaster <span class="pro">Pro</span></a>
+          <nav class="saas-menu-desk">
+            <a href="#recursos">Recursos</a>
+            <a href="#metricas">Métricas</a>
+            <a href="#precos">Preços</a>
+          </nav>
+          <div class="nav-right">
+            <a href="#precos" class="btn-acesso">Entrar</a>
+            <button class="btn-hamb" onclick="toggleSaasMenu()">☰</button>
+          </div>
+        </div>
+        <div class="saas-menu-mob" id="mobMenu">
+          <a href="#recursos" onclick="toggleSaasMenu()">Recursos</a>
+          <a href="#metricas" onclick="toggleSaasMenu()">Métricas</a>
+          <a href="#precos" onclick="toggleSaasMenu()">Preços</a>
+        </div>
+      </header>
+
+      <section class="saas-hero">
+        <div class="saas-container hero-grid">
+          <div class="hero-info">
+            <span class="badge-versao">✨ Formação Garantida!</span>
+            <h1>A melhor escola para <span>aprender programação</span></h1>
+            <p>
+              A escola que mais cresce na América Latina com os melhores preços
+              do mercado
+            </p>
+            <div class="hero-actions">
+              <a href="#precos" class="btn-prim">Fazer inscrição</a>
+              <a href="#recursos" class="btn-sec">Ver Recursos</a>
+            </div>
+            <div class="garantias">
+              <span>✓ 50% off no Pix</span>
+              <span>✓ Cancele quando quiser</span>
+            </div>
+          </div>
+          <div class="hero-mockup">
+            <div class="mockup-header">
+              <span class="m-dot r"></span><span class="m-dot y"></span
+              ><span class="m-dot g"></span>
+            </div>
+            <div class="mockup-content">
+              <div class="metric-line">
+                <span>Estatisticas de formação</span>
+                <strong>+25.810</strong>
+              </div>
+              <div class="bar-bg"><div class="bar-val"></div></div>
+              <div class="terminal-log">
+                Mais de 25 mil alunos formados<br />
+                90% dos alunos já saem empregados<br />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="saas-stats" id="metricas">
+        <div class="saas-container stats-grid">
+          <div class="stat-col">
+            <strong>+ 25.000</strong><span>Alunos formados</span>
+          </div>
+          <div class="stat-col">
+            <strong>90%</strong><span>Já saem empregados</span>
+          </div>
+          <div class="stat-col">
+            <strong>100%</strong><span>certificado que vale!</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="saas-cards-sec" id="recursos">
+        <div class="saas-container">
+          <div class="sec-title">
+            <h2>Feito pensando em você</h2>
+            <p>Infraestrutura pensada no dia a dia de um desenvolvedor.</p>
+          </div>
+          <div class="cards-grid">
+            <div class="feature-box">
+              <span class="ico">⚡</span>
+              <h3>Laboratorios</h3>
+              <p>
+                Salas equipadas com os melhores computadores e melhor
+                refrigeração pensando no seu conforto.
+              </p>
+            </div>
+            <div class="feature-box">
+              <span class="ico">🛡️</span>
+              <h3>Professores de ponta</h3>
+              <p>
+                Professores fromados, especializados e prontos para ensinar a
+                nova geração de programadores.
+              </p>
+            </div>
+            <div class="feature-box">
+              <span class="ico">📈</span>
+              <h3>Foco no mercado de trabalho</h3>
+              <p>
+                O curso foi pensado em preparar os alunos para o mercado de
+                trabalho, ensinando o apenas o essencial.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="saas-pricing-sec" id="precos">
+        <div class="saas-container">
+          <div class="sec-title">
+            <h2>Planos Claros e Transparente</h2>
+            <p>Planos que cabem no seu bolço.</p>
+          </div>
+          <div class="pricing-grid">
+            <div class="price-box">
+              <div>
+                <h3>Iniciante</h3>
+                <p class="desc">Plano base.</p>
+                <div class="valor">R$ 29 <span>/mês</span></div>
+                <ul>
+                  <li>✓ Acesso a todas as aulas</li>
+                  <li>✓ Acesso aos melhores professores</li>
+                  <li>✓ Acesso ao laboratorio completo</li>
+                </ul>
+              </div>
+              <button class="btn-plano">Escolher Plano</button>
+            </div>
+            <div class="price-box destaque">
+              <span class="tag-dest">MAIS POPULAR</span>
+              <div>
+                <h3>Pro</h3>
+                <p class="desc">Mais recomendado.</p>
+                <div class="valor">R$ 79 <span>/mês</span></div>
+                <ul>
+                  <li>✓ Acesso a todas as aulas</li>
+                  <li>✓ Acesso aos melhores professores</li>
+                  <li>✓ Acesso ao laboratorio completo</li>
+                  <li>✓ Acesso ao refeitorio gratis</li>
+                </ul>
+              </div>
+              <button class="btn-plano btn-dest">Primeiro mês gratis!</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="saas-foot">
+        <div class="saas-container">
+          <p>
+            © 2026 CloudFlow Inc. Todos os direitos reservados. 100% fluido em
+            qualquer tela.
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
